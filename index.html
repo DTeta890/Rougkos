@@ -659,12 +659,26 @@
             border: 1px solid rgba(255,255,255,0.1);
         }
 
+        .stat-value {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 2px;
+            margin-bottom: 0.5rem;
+        }
+
         .stat-number {
             font-size: 2.8rem;
             font-weight: 900;
             color: var(--red);
             line-height: 1;
-            margin-bottom: 0.5rem;
+        }
+
+        .stat-suffix {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--red);
+            line-height: 1;
         }
 
         .stat-label {
@@ -960,6 +974,7 @@
             .about-stats { grid-template-columns: 1fr 1fr; gap: 1rem; }
             .stat-item { padding: 1.2rem; }
             .stat-number { font-size: 2rem; }
+            .stat-suffix { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -1064,7 +1079,7 @@
             <!-- Service 6: Thermal Insulation -->
             <div class="service-card reveal">
                 <div class="service-icon">
-                    <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/><line x1="11.5" y1="8" x2="11.5" y2="14"/><circle cx="11.5" cy="16.5" r="2"/></svg>
                 </div>
                 <h3 data-el="s6title" data-gr="Θερμομόνωση" data-en="Thermal Insulation">Θερμομόνωση</h3>
                 <p data-el="s6desc" data-gr="Εσωτερική και εξωτερική θερμομόνωση για μέγιστη ενεργειακή απόδοση. Εξοικονομήστε ενέργεια και χρήματα με σωστή μόνωση." data-en="Interior and exterior thermal insulation for maximum energy efficiency. Save energy and money with proper insulation.">Εσωτερική και εξωτερική θερμομόνωση για μέγιστη ενεργειακή απόδοση. Εξοικονομήστε ενέργεια και χρήματα με σωστή μόνωση.</p>
@@ -1114,23 +1129,19 @@
             </div>
             <div class="about-stats reveal">
                 <div class="stat-item">
-                    <div class="stat-number" data-count="500">0</div>
-                    <div class="stat-label">+</div>
+                    <div class="stat-value"><div class="stat-number" data-count="500">0</div><span class="stat-suffix">+</span></div>
                     <div class="stat-label" data-el="stat1" data-gr="Ολοκληρωμένα Έργα" data-en="Completed Projects">Ολοκληρωμένα Έργα</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="20">0</div>
-                    <div class="stat-label">+</div>
+                    <div class="stat-value"><div class="stat-number" data-count="20">0</div><span class="stat-suffix">+</span></div>
                     <div class="stat-label" data-el="stat2" data-gr="Χρόνια Εμπειρίας" data-en="Years of Experience">Χρόνια Εμπειρίας</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="100">0</div>
-                    <div class="stat-label">%</div>
+                    <div class="stat-value"><div class="stat-number" data-count="100">0</div><span class="stat-suffix">%</span></div>
                     <div class="stat-label" data-el="stat3" data-gr="Ικανοποίηση Πελατών" data-en="Client Satisfaction">Ικανοποίηση Πελατών</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="10">0</div>
-                    <div class="stat-label">+</div>
+                    <div class="stat-value"><div class="stat-number" data-count="10">0</div><span class="stat-suffix">+</span></div>
                     <div class="stat-label" data-el="stat4" data-gr="Ειδικότητες" data-en="Specializations">Ειδικότητες</div>
                 </div>
             </div>
